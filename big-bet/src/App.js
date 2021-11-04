@@ -6,14 +6,3 @@ function App() {
     );
   }
   export default App;
-  
-  
-    // PARA DEPOIS!!
-    // const loadData= () => {
-    //   axios
-    //     .get("rota api/jogos")
-    //     .then((res) => setGames(res.data));
-    // }
-    // useEffect(()=> {
-    //   loadData();
-    // }, []);

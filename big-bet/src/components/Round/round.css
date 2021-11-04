@@ -1,0 +1,14 @@
+.roundContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.fixturesContainer{
+    padding: 1rem;
+    border: 0.7rem solid black;
+    border-radius: 2%;
+}

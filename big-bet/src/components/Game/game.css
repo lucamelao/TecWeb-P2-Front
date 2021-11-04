@@ -1,0 +1,32 @@
+.games {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: 4rem;
+  background-color: white;
+  border-bottom: 0.1rem solid black;
+}
+
+.card-title {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color:black;
+}
+
+.shield{
+  height: 36px;
+  padding: 0.5rem;
+}
+
+.teamContainer{
+  display:flex;
+  flex-direction: row;
+  background-color:transparent;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+}
