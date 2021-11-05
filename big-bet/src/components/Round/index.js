@@ -22,7 +22,7 @@ export default function Round() {
       }, []);
     return(
         <div className="roundContainer">
-                {games.length === 0 ? <div>Loading...</div> : <div> JOGOS DA {round}</div>}
+                {games.length === 0 ? <div>Loading...</div> : <div className = "round-info"> JOGOS DA {round}</div>}
                 <div className="fixturesContainer">
                     {games.map((game) => (
                         <Game key={`game__${game.slug}`} 
