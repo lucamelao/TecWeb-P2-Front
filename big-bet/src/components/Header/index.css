@@ -32,3 +32,13 @@
 .subtitle{
     font-size: 150%;
 }
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.link{
+    margin-right: 1rem;
+}

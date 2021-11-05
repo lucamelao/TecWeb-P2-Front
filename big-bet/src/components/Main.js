@@ -7,8 +7,8 @@ import Header from './Header'
 export default function Main() {
   return(
     <div>
-    <Header/>
-    <Round />
+      <Header/>
+      <Round />
     </div>
   )
 }
