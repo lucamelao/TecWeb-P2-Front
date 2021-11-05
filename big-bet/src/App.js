@@ -2,7 +2,8 @@ import './App.css';
 import Main from './components/Main'
 import Ranking from './components/Ranking'
 import {BrowserRouter, Route, Routes } from "react-router-dom"
-
+import { Provider } from 'react-redux';
+import store from './store';
 
 const App = () => {
   return(
@@ -15,5 +16,19 @@ const App = () => {
   )
 };
 
+const AppWrapper = () => {
+  if (store) {
+    return (
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    );
+  } else {
+      return (
+          <App/>
+      );
+  }
+  };
 
-export default App;
+
+export default AppWrapper;

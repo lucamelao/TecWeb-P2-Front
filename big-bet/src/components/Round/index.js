@@ -2,9 +2,16 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Game from '../Game';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./round.css";
+import { useSelector, useDispatch } from 'react-redux'
+
 
 export default function Round() {
+
+    let bet = useSelector(state => state)
+    const dispatch = useDispatch()
 
     const [games, setGames] = useState([]); 
     const [round,setRound] = useState("");
@@ -20,19 +27,40 @@ export default function Round() {
               setRound(res.data.slug)
           });
       }, []);
+
+    const postBet = async () => {
+        console.log(bet)
+        const json = JSON.stringify(bet)
+        return(
+            axios.post("http://127.0.0.1:8000/post_bet", json)
+            .then((res) => {
+                console.log(res)
+            }, (err) => {
+                console.log(err);
+        })
+    )
+
+    }
     return(
         <div className="roundContainer">
+            <input  
+              defaultValue={bet.user}
+              onChange={e =>  {
+                  dispatch({type:"USER", newUser:e.target.value})
+            }} />
                 {games.length === 0 ? <div>Loading...</div> : <div className = "round-info"> JOGOS DA {round}</div>}
                 <div className="fixturesContainer">
                     {games.map((game) => (
-                        <Game key={`game__${game.slug}`} 
+                        <Game key={game.slug} 
                         home={game.time_mandante.sigla} 
                         away={game.time_visitante.sigla} 
                         logoHome={game.time_mandante.escudo}
                         logoAway={game.time_visitante.escudo}
+                        slug={game.slug}
                         />
                     ))}
             </div>
+            <Button type="button" onClick={postBet}>Submit</Button>{' '}
         </div>
     )
 }
