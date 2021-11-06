@@ -5,16 +5,24 @@
     align-content: center;
     align-items: center;
     height: 100%;
+    margin-top: 8rem;
 }
 
 .fixturesContainer{
     padding: 1rem;
-    border: 0.7rem solid black;
-    border-radius: 2%;
+    border: 0.25rem solid black;
+    width: 25%;
+    line-height: 1rem;
 }
 
 .round-info{
     padding-bottom: 1%;
     font-size: 120%;
     font-weight: bold;
+}
+
+.fix{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

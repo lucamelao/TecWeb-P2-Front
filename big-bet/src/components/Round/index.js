@@ -43,13 +43,12 @@ export default function Round() {
     }
     return(
         <div className="roundContainer">
-            <input  
-              defaultValue={bet.user}
-              onChange={e =>  {
+            Username:<input  defaultValue={bet.user} onChange={e =>  {
                   dispatch({type:"USER", newUser:e.target.value})
             }} />
                 {games.length === 0 ? <div>Loading...</div> : <div className = "round-info"> JOGOS DA {round}</div>}
                 <div className="fixturesContainer">
+                    <div className="fix">
                     {games.map((game) => (
                         <Game key={game.slug} 
                         home={game.time_mandante.sigla} 
@@ -58,7 +57,8 @@ export default function Round() {
                         logoAway={game.time_visitante.escudo}
                         slug={game.slug}
                         />
-                    ))}
+                        ))}
+                    </div>
             </div>
             <Button type="button" onClick={postBet}>Submit</Button>{' '}
         </div>

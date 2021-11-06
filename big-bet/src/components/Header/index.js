@@ -8,10 +8,11 @@ export default function Header() {
     return(
     <div className="appbar">
         <img src="/logo_soccer.png" className="logo"/>
-        <span className="subtitle">Insert a catch phrase here??</span>
+        <span className="subtitle">Just like others bet websites, but better.</span>
         <div className="links">
           <Link to="/" className="link">Rodada</Link>
           <Link to="/ranking" className="link">Ranking</Link>
+          <Link to="/rules" className="link">Rules</Link>
         </div>
     </div>
     )

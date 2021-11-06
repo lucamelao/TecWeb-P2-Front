@@ -29,7 +29,7 @@ export default function Game(props) {
     <div className="teamContainer">
       <img className = "shield" src={props.logoHome} alt="home logo"/>
       <h3 className="card-title">{props.home}</h3>
-      <input 
+      <input className = "in"
         defaultValue={fixture.score.home}
         onChange={e =>  {
           setFixture(prev=>{
@@ -41,7 +41,7 @@ export default function Game(props) {
     <div className="teamContainer">
       <img className = "shield" src={props.logoAway} alt="away logo"/>
       <h3 className="card-title">{props.away}</h3>
-      <input 
+      <input className = "in"
         defaultValue={fixture.score.away}
         onChange={e =>  {
           setFixture(prev=>{

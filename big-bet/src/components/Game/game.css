@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 10rem;
+  width: 19rem;
   background-color: white;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.2rem solid black; 
+  height: 8rem;
 }
 
 .card-title {
@@ -14,6 +15,7 @@
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   color:black;
+  margin-right: 1rem;
 }
 
 .shield{
@@ -26,6 +28,11 @@
   flex-direction: row;
   background-color:transparent;
   justify-content: space-around;
-  padding: 0rem;
   align-items: center;
+}
+
+.in{
+  display: flex;
+  align-items: inherit;
+  margin-left: 0.2rem;
 }
