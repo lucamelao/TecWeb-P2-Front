@@ -43,10 +43,14 @@ export default function Round() {
     }
     return(
         <div className="roundContainer">
-            Username:<input  defaultValue={bet.user} onChange={e =>  {
+            <div className = "user">
+            <div className = "dot">Username:</div>    
+            <input  className = "type"defaultValue={bet.user} onChange={e =>  {
                   dispatch({type:"USER", newUser:e.target.value})
             }} />
-                {games.length === 0 ? <div>Loading...</div> : <div className = "round-info"> JOGOS DA {round}</div>}
+            </div>
+            <div className = "rules">*Confira as regras ao final da página.</div>
+                {games.length === 0 ? <div>Loading...</div> : <div className = "round-info"> Jogos da {round}</div>}
                 <div className="fixturesContainer">
                     <div className="fix">
                     {games.map((game) => (
@@ -60,7 +64,14 @@ export default function Round() {
                         ))}
                     </div>
             </div>
-            <Button type="button" onClick={postBet}>Submit</Button>{' '}
+            <Button type="button" onClick={postBet} className = "btn">Submit</Button>{' '}
+            <div className = "rulesBoard">
+                REGRAS DAS APOSTAS
+                <li>Após clicar em "lock bet", sua aposta será salva, e não poderá mais ser alterada.</li>
+                <li>Pontuação por acerto do resultado: 3 pontos.</li>
+                <li>Pontuação por acerto do placar: 5 pontos.</li>
+                <li>Ao clicar em "Submit", seus palpites serão salvos e validados.</li>
+            </div>
         </div>
     )
 }

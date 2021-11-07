@@ -12,7 +12,6 @@ export default function Header() {
         <div className="links">
           <Link to="/" className="link">Rodada</Link>
           <Link to="/ranking" className="link">Ranking</Link>
-          <Link to="/rules" className="link">Rules</Link>
         </div>
     </div>
     )

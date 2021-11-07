@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: rgb(102, 99, 99);
+    background-color: rgb(38, 218, 53);
     align-items:center;
     width:100%;
-    box-shadow: 0 6px 10px rgb(100, 98, 98);
-    margin-bottom: 10%;
+    box-shadow: 8px 6px 10px rgb(22, 22, 22);
+    margin-bottom: 10rem;
     position: fixed;
 }
   
@@ -18,7 +18,6 @@
     resize: both;
 }
   
-
 .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -44,8 +43,8 @@
 
 .link{
     margin-right: 1rem;
-    background-color:rgb(255, 251, 240);
-    color: inherit;
+    background-color:rgb(75, 74, 74);
+    color: whitesmoke;
     text-decoration: none;
     height: 2rem;
     border-radius: 0.5rem;

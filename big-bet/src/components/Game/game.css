@@ -3,10 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 19rem;
-  background-color: white;
-  border-bottom: 0.2rem solid black; 
-  height: 8rem;
+  width: 21rem;
+  background-color: rgb(90, 88, 88);
+  border: 0.2rem solid black; 
+  height: 9rem;
+  margin: 0.1rem;
+  padding: 0.1rem;
 }
 
 .card-title {
@@ -19,8 +21,9 @@
 }
 
 .shield{
-  height: 36px;
-  padding: 0.5rem;
+  height: 38px;
+  padding: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .teamContainer{
@@ -31,8 +34,7 @@
   align-items: center;
 }
 
-.in{
-  display: flex;
-  align-items: inherit;
-  margin-left: 0.2rem;
+.type{
+  background-color: rgb(112, 108, 108);
+  border-radius: 0.4rem;
 }
