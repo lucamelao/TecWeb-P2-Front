@@ -6,7 +6,7 @@
     align-items: center;
     height: 100%;
     margin-top: 5.5rem;
-    background-color: rgb(90, 88, 88);
+    background-color: rgb(65, 63, 63);
 }
 
 .fixturesContainer{
@@ -20,16 +20,18 @@
     font-size: 140%;
     font-weight: bold;
     color: rgb(38, 218, 53);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: "Roboto Condesed sans-serif";
+    text-transform: uppercase;
 }
 
 .fix{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 48rem;
+    height: 100%;
+    width: 100%;
 }
 
 .btn{
@@ -44,7 +46,7 @@
 }
 
 .user{
-    margin-top: 1rem;
+    margin-top: 3rem;
     color: black;
     font-weight: bolder;
     display: flex;
