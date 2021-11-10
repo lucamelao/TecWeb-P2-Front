@@ -3,7 +3,7 @@ import { createStore }  from 'redux';
 const initialState = {
     fixtures: [],
     round: 10,
-    user: "teste",
+    user: "username",
 }
 
 function rounds(state = initialState, action){

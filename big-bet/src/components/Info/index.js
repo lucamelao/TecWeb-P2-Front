@@ -9,13 +9,13 @@ export default function Info(props) {
 
     useEffect(() => {
         axios
-          .get(`get_user_bet/${props.id}`)
-          .then((res) => console.log(res.data))
+          .get(`http://127.0.0.1:8000/get_user_bet/${props.id}`)
+          .then((res) => setData(JSON.stringify(res.data.bet.rounds[0].fixtures)))
     },[])
     
     return(
       <div className = "tableContainer">
-          {data}
+        {data}
       </div>
     )
 }
