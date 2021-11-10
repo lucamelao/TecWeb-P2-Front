@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Line from './Line'
+import "./index.css"
 
 
 export default function UserRanking() {
@@ -19,6 +20,13 @@ export default function UserRanking() {
     
     return(
       <div className = "tableContainer">
+        <div className = "tableHead">
+        <div className = "tableTitle">Ranking de apostadores</div>
+        <div className = "headers">
+          <div className="u">User</div>
+          <div className="s">Score</div>
+        </div>
+        </div>
         {bets.map(bet => 
           <Line key={bet.user} id={bet.id} user={bet.user} total_score={bet.total_score}/>
         )}
