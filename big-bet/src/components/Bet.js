@@ -10,8 +10,10 @@ export default function Bet() {
   return(
     <div>
       <Header/>
-      <div>make a bet</div>
+      <div>Bet Historic</div>
+      <div className = "historicContainer">
       <Info id={id} />
-    </div>
+      </div>
+      </div>
   )
 }

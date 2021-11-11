@@ -22,14 +22,19 @@ export default function UserRanking() {
       <div className = "tableContainer">
         <div className = "tableHead">
         <div className = "tableTitle">Ranking de apostadores</div>
-        <div className = "headers">
-          <div className="u">User</div>
-          <div className="s">Score</div>
         </div>
+        <div className = "headersFather">
+          <div className = "headers">
+            <div className="u">
+              <div>User</div>
+            </div>
+            <div className="s">Score</div>
+            <div className="b">Bet</div>
+          </div>
+          {bets.map(bet => 
+            <Line key={bet.user} id={bet.id} user={bet.user} total_score={bet.total_score}/>
+          )}
         </div>
-        {bets.map(bet => 
-          <Line key={bet.user} id={bet.id} user={bet.user} total_score={bet.total_score}/>
-        )}
       </div>
     )
 }

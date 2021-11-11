@@ -1,22 +1,22 @@
 .cont{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     background-color: rgb(65, 63, 63);
-    height: 300%;
+    height: 100%;
     padding-bottom: 40%;
 }
 
 .tableContainer{
     display: flex;
     margin-top: 10%;
-    border: 0.2rem solid black; 
-    width: 40%;
+    /* border: 0.2rem solid black;  */
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color:whitesmoke;
+    justify-content: space-around;
 }
 
 .tableLine{
@@ -29,17 +29,19 @@
 }
 
 .author{
-    border: 0.2rem solid black; 
+    border-bottom: 0.2rem solid black; 
     width: 50%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    color: white;    
 }
 
 .score{
-    border: 0.2rem solid black; 
+    border-bottom: 0.2rem solid black; 
     width: 10%;
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    color: white;   
 }
 
 .tableHead{
@@ -50,27 +52,44 @@
 }
 
 .tableTitle{
-    font-size: 100%;
+    font-size: 150%;
     font-weight: bold;
     font-family: "Roboto Condesed sans-serif";
     text-transform: uppercase;
-    border-bottom: 0.2rem solid black; ;
+    border-bottom: 0.2rem solid black; 
+    color: rgb(38, 218, 53);
+}
+
+.headersFather{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .headers{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     margin-top: 5%;
-    margin-right: 5%;
+    font-family: "Roboto Condesed sans-serif";
+    color: rgb(38, 218, 53);
+    font-size: 140%;
 }
 
 .u{
-    margin-right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
 }
+
 .s{
-    margin-right:16%;
+    margin-left: 20%;
+}
+
+.b{
+    margin-right: 2%;
 }
 
 .check{
@@ -86,4 +105,5 @@
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 1rem;
+    border: 0.1rem solid black; 
 }
