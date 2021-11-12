@@ -32,7 +32,7 @@ export default function Round() {
         console.log(bet)
         const json = JSON.stringify(bet)
         return(
-            axios.post("http://127.0.0.1:8000/post_bet", json)
+            axios.post("https://api-big-bet.herokuapp.com/post_bet", json)
             .then((res) => {
                 console.log(res)
             }, (err) => {

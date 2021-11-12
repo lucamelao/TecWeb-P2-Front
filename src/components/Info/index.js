@@ -10,7 +10,7 @@ export default function Info(props) {
 
     useEffect(() => {
         axios
-          .get(`http://127.0.0.1:8000/get_user_bet/${props.id}`)
+          .get(`https://api-big-bet.herokuapp.com/get_user_bet/${props.id}`)
           .then((res) => setData(res.data.bet.rounds[0].fixtures))
     },[])
     

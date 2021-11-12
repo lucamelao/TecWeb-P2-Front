@@ -10,10 +10,10 @@ export default function UserRanking() {
 
     useEffect(() => {
         axios
-          .get("http://127.0.0.1:8000/calculate_scores/10")
+          .get("https://api-big-bet.herokuapp.com/calculate_scores/10")
           .then(() => {
               axios
-              .get("http://127.0.0.1:8000/get_scores")
+              .get("https://api-big-bet.herokuapp.com/get_scores")
               .then((res) => setBets(res.data.bets))
           });
       },[])
