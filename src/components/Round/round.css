@@ -49,14 +49,14 @@
 
 .user{
     margin-top: 3rem;
-    color: black;
+    color: white;
     font-weight: bolder;
     display: flex;
     flex-direction: row;
 }
 
 .rules{
-    color: black;
+    color: white;
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -65,7 +65,7 @@
     border: 0.2rem solid black; 
     margin: 2rem;
     padding: 2rem;
-    color: black;
+    color: white;
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
