@@ -15,9 +15,10 @@ export default function Info(props) {
     },[])
     
     return(
+      <div className = "back">
       <div className = "hist"> 
       <div className = "historicContainer">
-      <div className = "label">Bet Historic</div>
+      <div className = "label">Bet Details</div>
         {data.map((d) => 
           (
           <div className = "line">
@@ -25,17 +26,18 @@ export default function Info(props) {
             <div>{d.home_team}</div>
             <div>{d.score.home_score}</div>
             </div>
-            <div>X</div>
+            <div className = "X">X</div>
             <div className = "team-result">
-            <div>{d.away_team}</div>
             <div>{d.score.away_score}</div>
+            <div>{d.away_team}</div>
             </div>
             <div className = "points">
-            <div>{d.fixture_score} pts</div>
+            <div>+{d.fixture_score} pts</div>
             </div>
           </div>
         ))}
       </div>
+    </div>
     </div>
     )
 }

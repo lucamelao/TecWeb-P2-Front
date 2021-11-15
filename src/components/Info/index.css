@@ -13,7 +13,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1%;
+    padding: 5%;
+    width: 80%;
 }
 
 .hist{
@@ -28,9 +29,9 @@
     flex-direction: row;
     justify-content: space-between;
     width: 40%;
-    margin-left: 2%;
-    margin-right: 2%;
-    /* padding-left: 0.5rem; */
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
 }
 
 .points{
@@ -46,4 +47,14 @@
     color: rgb(38, 218, 53);
     display: flex;
     justify-content: center;
+    border-bottom: 0.2rem solid black; 
+}
+
+.back{
+    background-color: rgb(65, 63, 63);
+    padding-bottom: 2%;
+}
+
+.X{
+    color: white;
 }
