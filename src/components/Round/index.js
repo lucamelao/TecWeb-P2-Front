@@ -16,7 +16,7 @@ export default function Round() {
     const [games, setGames] = useState([]); 
     const [round,setRound] = useState("");
     const header = {
-        "Authorization":"Bearer live_15eb31904abcf4415c0444bc1a2306"
+        "Authorization":"Bearer live_6cb4e5666f9c190794fd4e9ac930ca"
     }
 
     useEffect(() => {
