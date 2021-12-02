@@ -1,0 +1,7 @@
+.simulado-display{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 10%;
+    border: 0.2rem solid black; 
+}
